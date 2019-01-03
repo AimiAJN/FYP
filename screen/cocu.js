@@ -21,6 +21,11 @@ class cocuScreen extends React.Component {
             <View style={styles.boxTwo}>
                 <Text style={{fontSize: 17, margin: 7}}>Co-Curriculum</Text>
             </View>
+            <View style={{flexDirection: 'column', alignItems: 'center'}}>
+                <Text style={{margin: 5}}></Text>
+                <Text style={styles.title}>Co-curricular Information</Text>
+                <View style={{width: 340, height: 200, marginBottom: 30, backgroundColor: '#FFFFFF'}}></View>
+            </View>
         </View> 
     ); 
   }
@@ -32,7 +37,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'flex-start',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#FFEFD1',
     margin: 0,
   },
   boxOne: {
@@ -42,5 +47,12 @@ const styles = StyleSheet.create({
   boxTwo: {
     alignItems: 'center',
     backgroundColor: '#FDCA45',
+  },
+  title: {
+    fontSize: 17, 
+    padding: 5, 
+    backgroundColor: '#6BCDFD', 
+    textAlign: 'center', 
+    width: 340,
   },
 });
