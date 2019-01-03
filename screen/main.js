@@ -12,7 +12,6 @@ class mainScreen extends React.Component {
     
   render() {
     return(
-        <ScrollView>
         <View style={styles.container}>
             <View style={styles.boxOne}>
                 <AutoHeightImage width={150} style={{margin: 13}} source={{uri:'http://imaluum.iium.edu.my/assets/images/full-typeface.png'}}/>
@@ -20,7 +19,9 @@ class mainScreen extends React.Component {
             <View style={styles.boxTwo}>
                 <Text style={{fontSize: 17, margin: 7}}>Dashboard</Text>
             </View>
-            <View style={{flexDirection: 'row', justifyContent: 'center', marginTop: 30, marginBottom: 10}}>
+            <ScrollView>
+            <Text style={{margin: 5}}></Text>
+            <View style={{flexDirection: 'row', justifyContent: 'center', marginBottom: 10}}>
                 <View style={styles.fav}></View>
                 <View style={styles.summary}></View>
             </View>
@@ -33,12 +34,11 @@ class mainScreen extends React.Component {
                 <View style={styles.summary}></View>
             </View>
             <View style={{flexDirection: 'column', alignItems: 'center'}}>
-                    <Text style={styles.announcement}>Announcement</Text>
-                    <View style={{width: 340, height: 340, marginBottom: 30, backgroundColor: '#FFFFFF'}}></View>
+                <Text style={styles.title}>Announcement</Text>
+                <View style={{width: 340, height: 340, marginBottom: 30, backgroundColor: '#FFFFFF'}}></View>
             </View>
-            
+            </ScrollView>
         </View> 
-        </ScrollView>
     ); 
   }
 }
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     height: 100, 
     backgroundColor: '#FFFFFF',
   },
-  announcement: {
+  title: {
     fontSize: 17, 
     padding: 5, 
     backgroundColor: '#6BCDFD', 
