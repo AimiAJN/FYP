@@ -21,6 +21,13 @@ class disciplinaryScreen extends React.Component {
             <View style={styles.boxTwo}>
                 <Text style={{fontSize: 17, margin: 7}}>Disciplinary</Text>
             </View>
+            <View style={{flexDirection: 'column', alignItems: 'center'}}>
+                <Text style={{margin: 5}}></Text>
+                <Text style={styles.title}>Disciplinary Information</Text>
+                <View style={{width: 340, height: 200, marginBottom: 30, backgroundColor: '#FFFFFF'}}></View>
+                <Text style={styles.title}>{'Compound Information &\nTraffic Summon Information'}</Text>
+                <View style={{width: 340, height: 200, marginBottom: 30, backgroundColor: '#FFFFFF'}}></View>
+            </View>
         </View> 
     ); 
   }
@@ -32,7 +39,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'flex-start',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#FFEFD1',
     margin: 0,
   },
   boxOne: {
@@ -42,5 +49,12 @@ const styles = StyleSheet.create({
   boxTwo: {
     alignItems: 'center',
     backgroundColor: '#FDCA45',
+  },
+  title: {
+    fontSize: 17, 
+    padding: 5, 
+    backgroundColor: '#6BCDFD', 
+    textAlign: 'center', 
+    width: 340,
   },
 });
