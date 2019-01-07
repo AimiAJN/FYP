@@ -16,7 +16,7 @@ class myAcademicScreen extends React.Component {
     return(
         <View style={styles.container}>
             <View style={styles.boxOne}>
-                <Icon name='ios-menu' style={{margin: 10}}/>
+                <Icon name='ios-menu' style={{margin: 10}} onPress={() => this.props.navigation.openDrawer()}/>
                 <AutoHeightImage width={150} style={{margin: 13}} source={{uri:'http://imaluum.iium.edu.my/assets/images/full-typeface.png'}}/>
                 <Icon name='ios-contact' style={{margin: 10}}/>
             </View>
@@ -30,7 +30,7 @@ class myAcademicScreen extends React.Component {
                 <Text style={styles.list}>Final Exam</Text>
                 <Text style={styles.list}>Result</Text>
                 <Text style={styles.list}>Study Plan</Text>
-                <Text style={styles.list} onPress={ ()=> Linking.openURL('http://prereg.iium.edu.my/') }>Pre Reg</Text>
+                <Text style={styles.list} onPress={()=> Linking.openURL('http://prereg.iium.edu.my/')}>Pre Reg</Text>
                 <Text style={styles.list}>Partial Transcript</Text>
             </View>
         </View> 
