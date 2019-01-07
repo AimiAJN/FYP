@@ -10,6 +10,7 @@ Belum siap:
 
 Notes:
 - Nak kena betulkan slide menu icon letak kat tepi word imaluum tu. dh try tp sbb guna margin, bila tukar landscape dia jd lari..
+- Kalau xberjaya buat dropdown utk 'Profile, Setting, Logout', letak je kat left menu tu ok x eh..
 - Kat 'My Services' page, link utk button 'Office 365 (Reset Password)' dan ke bawah tak dpt nak buat lagi sbb user kena login dulu baru boleh link. Kte dah try copypaste link dr imaluum kte letak kat dlm code, tp bila click, dia gi ke browser tapi kena login imaluum kat browser tu dulu. Means link utk button 'Office 365 (Reset Password)' dan ke bawah tu hanya boleh apply bila dah ada databse shj sbb dia depends on user account.
 
 INSTALL REACT NATIVE NAVIGATION & GESTURE HANDLER
