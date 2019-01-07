@@ -6,8 +6,8 @@ import AutoHeightImage from 'react-native-auto-height-image';
 class disciplinaryScreen extends React.Component {
   static navigationOptions = {
     title: 'Disciplinary',
-    //headerLeft: null
-    headerLeft: ( <Icon name="ios-menu" style={{margin: 10}}/>),
+    headerLeft: null,
+    //headerLeft: ( <Icon name="ios-menu" style={{margin: 10}}/>),
   };
     
   render() {
@@ -16,8 +16,9 @@ class disciplinaryScreen extends React.Component {
     return(
         <View style={styles.container}>
             <View style={styles.boxOne}>
+                <Icon name='ios-menu' style={{margin: 10}}/>
                 <AutoHeightImage width={150} style={{margin: 13}} source={{uri:'http://imaluum.iium.edu.my/assets/images/full-typeface.png'}}/>
-            </View>
+                <Icon name='ios-contact' style={{margin: 10}}/>            </View>
             <View style={styles.boxTwo}>
                 <Text style={{fontSize: 17, margin: 7}}>Disciplinary</Text>
             </View>
@@ -45,6 +46,8 @@ const styles = StyleSheet.create({
   boxOne: {
     alignItems: 'center', 
     backgroundColor: '#6ACA6B',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   boxTwo: {
     alignItems: 'center',
