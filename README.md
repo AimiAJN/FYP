@@ -5,7 +5,11 @@ Belum siap:
 - Page Profile
 - Page Setting
 - Logout
-- Slide menu icon tu xfunction (sbb bila tekan dia xkluar menu..dh try coding xjadi2 sobsob)
+- Announcement popup
+- Page Class timetable
+- Page CAM
+- Page Final Exam
+- Page Result
 - Connect to database
 
 Notes:
