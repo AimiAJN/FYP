@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, Linking} from 'react-native';
 import {Icon} from 'native-base';
 import AutoHeightImage from 'react-native-auto-height-image';
 
@@ -27,7 +27,7 @@ class myAcademicScreen extends React.Component {
                 <Text style={styles.list}>Final Exam</Text>
                 <Text style={styles.list}>Result</Text>
                 <Text style={styles.list}>Study Plan</Text>
-                <Text style={styles.list}>Pre Reg</Text>
+                <Text style={styles.list} onPress={ ()=> Linking.openURL('http://prereg.iium.edu.my/') }>Pre Reg</Text>
                 <Text style={styles.list}>Partial Transcript</Text>
             </View>
         </View> 
