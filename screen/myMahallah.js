@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, Linking} from 'react-native';
 import {Icon} from 'native-base';
 import AutoHeightImage from 'react-native-auto-height-image';
 
@@ -25,7 +25,7 @@ class myMahallahScreen extends React.Component {
                 <Text style={styles.list}>Check In Slip</Text>
                 <Text style={styles.list}>Check Out Slip</Text>
                 <Text style={styles.list}>Prereg Slip</Text>
-                <Text style={styles.list}>Online Pre-reg</Text>
+                <Text style={styles.list} onPress={ ()=> Linking.openURL('http://prereg.iium.edu.my/regmahallah/') }>Online Pre-reg</Text>
             </View>
         </View> 
     ); 
