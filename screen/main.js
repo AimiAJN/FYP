@@ -26,15 +26,24 @@ class mainScreen extends React.Component {
             <ScrollView>
             <Text style={{margin: 5}}></Text>
             <View style={{flexDirection: 'row', justifyContent: 'center', marginBottom: 10}}>
-                <View style={styles.fav}></View>
+                <View style={styles.fav}>
+                  <Icon name='calendar'/>
+                  <Text style={{textAlign: 'center'}}>{'Class\nTimetable'}</Text>
+                </View>
                 <View style={styles.summary}></View>
             </View>
             <View style={{flexDirection: 'row', justifyContent: 'center'}}>
-                <View style={styles.fav}></View>          
+                <View style={styles.fav}>
+                  <Icon name='md-paper'/>
+                  <Text style={{textAlign: 'center'}}>{'Result'}</Text>
+                </View>          
                 <View style={styles.summary}></View>
             </View>
             <View style={{flexDirection: 'row', justifyContent: 'center', marginTop: 10, marginBottom: 30}}>
-                <View style={styles.fav}></View>
+                <View style={styles.fav}>
+                  <Icon name='logo-usd'/>
+                  <Text style={{textAlign: 'center'}}>{'Finance'}</Text>
+                </View>
                 <View style={styles.summary}></View>
             </View>
             <View style={{flexDirection: 'column', alignItems: 'center'}}>
@@ -70,6 +79,9 @@ const styles = StyleSheet.create({
     width: 90, 
     height: 100, 
     backgroundColor: '#FD996B',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center', 
   },
   summary: {
     width: 250, 
