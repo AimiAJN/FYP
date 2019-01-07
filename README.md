@@ -4,7 +4,7 @@ Belum siap:
 - Right slide menu (Profile, Setting, Logout) -> yg ni mcm xleh je nak buat slide menu(mcm belum available lg funtion utk 2 slide menu; kiri and kanan). So optionnya adalah buat dropdown menu mcm web version.
 - Page Profile
 - Page Setting
-- Page Logout
+- Logout
 - Slide menu icon tu xfunction (sbb bila tekan dia xkluar menu..dh try coding xjadi2 sobsob)
 - Connect to database
 
