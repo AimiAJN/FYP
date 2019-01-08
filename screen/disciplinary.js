@@ -8,6 +8,7 @@ class disciplinaryScreen extends React.Component {
     title: 'Disciplinary',
     headerLeft: null,
     //headerLeft: ( <Icon name="ios-menu" style={{margin: 10}}/>),
+    drawerIcon:(<Icon name='ios-alert'/>),
   };
     
   render() {
