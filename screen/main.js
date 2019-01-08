@@ -6,9 +6,10 @@ import AutoHeightImage from 'react-native-auto-height-image';
 class mainScreen extends React.Component {
   static navigationOptions = {
         title: 'Dashboard',
-        headerLeft: null
+        headerLeft: null,
         // headerLeft: ( <Icon name='ios-menu' style={{margin: 10}}/>),
         // headerRight: ( <Icon name='ios-contact' style={{padding: 10}}/>),
+        drawerIcon:(<Icon name='ios-home'/>),
       }
  
   render() {
