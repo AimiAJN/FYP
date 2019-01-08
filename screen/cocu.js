@@ -8,6 +8,7 @@ class cocuScreen extends React.Component {
     title: 'Co-Curriculum',
     headerLeft: null,
     //headerLeft: ( <Icon name="ios-menu" style={{margin: 10}}/>),
+    drawerIcon:(<Icon name='ios-trophy'/>),
   };
     
   render() {
