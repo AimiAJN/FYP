@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View, ScrollView, Linking} from 'react-native';
+import {StyleSheet, Text, View, ScrollView, Linking, Image} from 'react-native';
 import {Icon} from 'native-base';
 import AutoHeightImage from 'react-native-auto-height-image';
 
@@ -8,6 +8,7 @@ class myServicesScreen extends React.Component {
     title: 'My Services',
     headerLeft: null,
     //headerLeft: ( <Icon name="ios-menu" style={{margin: 10}}/>),
+    drawerIcon:(<AutoHeightImage width={27} source={{uri:'http://www.myiconfinder.com/uploads/iconsets/256-256-9abeb64d1349bdd412bd24f3af8868b3-gears.png'}}/>),
   };
     
   render() {
