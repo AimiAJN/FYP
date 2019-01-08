@@ -8,6 +8,7 @@ class myAcademicScreen extends React.Component {
     title: 'My Academic',
     headerLeft: null,
     //headerLeft: ( <Icon name="ios-menu" style={{margin: 10}}/>),
+    drawerIcon:(<Icon name='md-school'/>),
   };
     
   render() {
