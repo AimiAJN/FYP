@@ -8,6 +8,7 @@ class myMahallahScreen extends React.Component {
     title: 'My Mahallah',
     headerLeft: null,
     //headerLeft: ( <Icon name="ios-menu" style={{margin: 10}}/>),
+    drawerIcon:(<Icon name='md-bed'/>),
   };
     
   render() {
