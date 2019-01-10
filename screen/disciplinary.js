@@ -27,7 +27,7 @@ class disciplinaryScreen extends React.Component {
             <View style={{flexDirection: 'column', alignItems: 'center'}}>
                 <Text style={{margin: 5}}></Text>
                 <Text style={styles.title}>Disciplinary Information</Text>
-                <View style={{width: 340, height: 200, marginBottom: 30, backgroundColor: '#FFFFFF'}}></View>
+                <View style={{width: 340, height: 200, marginBottom: 20, backgroundColor: '#FFFFFF'}}></View>
                 <Text style={styles.title}>{'Compound Information &\nTraffic Summon Information'}</Text>
                 <View style={{width: 340, height: 200, marginBottom: 30, backgroundColor: '#FFFFFF'}}></View>
             </View>
