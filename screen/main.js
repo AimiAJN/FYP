@@ -19,7 +19,7 @@ class mainScreen extends React.Component {
             <View style={styles.boxOne}>
                 <Icon name='ios-menu' style={{margin: 10}} onPress={() => this.props.navigation.openDrawer()}/>
                 <AutoHeightImage width={150} style={{margin: 13}} source={{uri:'http://imaluum.iium.edu.my/assets/images/full-typeface.png'}}/>
-                <Icon name='ios-contact' style={{margin: 10}}/>
+                <Icon name='ios-contact' style={{margin: 10}}/>                
             </View>
             <View style={styles.boxTwo}>
                 <Text style={{fontSize: 17, margin: 7}}>Dashboard</Text>
@@ -48,8 +48,10 @@ class mainScreen extends React.Component {
                 <View style={styles.summary}></View>
             </View>
             <View style={{flexDirection: 'column', alignItems: 'center'}}>
-                <Text style={styles.title}>Announcement</Text>
-                <View style={{width: 340, height: 340, marginBottom: 30, backgroundColor: '#FFFFFF'}}></View>
+                <Text style={styles.announcement}>Announcement</Text>
+                <View style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', width: 340, height: 340, marginBottom: 30, backgroundColor: '#FFFFFF'}}>
+                  <Text style={styles.title}>Example Announcement</Text>
+                </View>
             </View>
             </ScrollView>
         </View> 
@@ -89,11 +91,19 @@ const styles = StyleSheet.create({
     height: 100, 
     backgroundColor: '#FFFFFF',
   },
-  title: {
+  announcement: {
     fontSize: 17, 
     padding: 5, 
     backgroundColor: '#6BCDFD', 
     textAlign: 'center', 
     width: 340,
+  },
+  title: {
+    fontSize: 16, 
+    padding: 5, 
+    backgroundColor: '#D9D9D9', 
+    textAlign: 'center', 
+    width: 320,
+    margin: 10,
   },
 });
