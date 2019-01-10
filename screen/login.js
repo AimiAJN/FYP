@@ -5,7 +5,7 @@ import CheckBox from 'react-native-check-box';
 
 class loginScreen extends React.Component {
     static navigationOptions = {
-        title: 'Login',
+        //title: 'Login',
     };
 
     constructor() {
