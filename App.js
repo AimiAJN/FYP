@@ -8,6 +8,8 @@ import myMahallahScreen from './screen/myMahallah';
 import myServicesScreen from './screen/myServices';
 import disciplinaryScreen from './screen/disciplinary';
 import cocuScreen from './screen/cocu';
+import viewProfileScreen from './screen/viewProfile';
+import settingScreen from './screen/setting';
 
 export default class App extends Component {  
   render() {
@@ -25,6 +27,9 @@ const StackNav = StackNavigator({
   myServices: {screen: myServicesScreen},
   disciplinary: {screen: disciplinaryScreen},
   cocu: {screen: cocuScreen},
+  viewProfile: {screen: viewProfileScreen},
+  setting: {screen: settingScreen},
+  Logout: {screen: loginScreen, navigationOptions: () => ({headerLeft: null,})},
 });
 
 const Router1 = DrawerNavigator({
@@ -35,6 +40,9 @@ const Router1 = DrawerNavigator({
   myServices: {screen: myServicesScreen},
   disciplinary: {screen: disciplinaryScreen},
   cocu: {screen: cocuScreen},
+  viewProfile: {screen: viewProfileScreen},
+  setting: {screen: settingScreen},
+  Logout: {screen: loginScreen},
 });
 
 // const DrawerNav = DrawerNavigator({ 
