@@ -10,6 +10,10 @@ import disciplinaryScreen from './screen/disciplinary';
 import cocuScreen from './screen/cocu';
 import viewProfileScreen from './screen/viewProfile';
 import settingScreen from './screen/setting';
+import classTimetableScreen from './screen/classTimetable';
+import CAMScreen from './screen/CAM';
+import finalExamScreen from './screen/finalExam';
+import resultScreen from './screen/result';
 
 export default class App extends Component {  
   render() {
@@ -30,6 +34,10 @@ const StackNav = StackNavigator({
   viewProfile: {screen: viewProfileScreen},
   setting: {screen: settingScreen},
   Logout: {screen: loginScreen, navigationOptions: () => ({headerLeft: null,})},
+  classTimetable: {screen: classTimetableScreen},
+  CAM: {screen: CAMScreen},
+  finalExam: {screen: finalExamScreen},
+  result: {screen: resultScreen},
 });
 
 const Router1 = DrawerNavigator({
