@@ -28,15 +28,15 @@ class mainScreen extends React.Component {
             <Text style={{margin: 5}}></Text>
             <View style={{flexDirection: 'row', justifyContent: 'center', marginBottom: 10}}>
                 <View style={styles.fav}>
-                  <Icon name='calendar'/>
-                  <Text style={{textAlign: 'center'}}>{'Class\nTimetable'}</Text>
+                  <Icon name='calendar' onPress={() => navigate('classTimetable')}/>
+                  <Text style={{textAlign: 'center'}} onPress={() => navigate('classTimetable')}>{'Class\nTimetable'}</Text>
                 </View>
                 <View style={styles.summary}></View>
             </View>
             <View style={{flexDirection: 'row', justifyContent: 'center'}}>
                 <View style={styles.fav}>
-                  <Icon name='md-paper'/>
-                  <Text style={{textAlign: 'center'}}>{'Result'}</Text>
+                  <Icon name='md-paper' onPress={() => navigate('result')}/>
+                  <Text style={{textAlign: 'center'}} onPress={() => navigate('result')}>{'Result'}</Text>
                 </View>          
                 <View style={styles.summary}></View>
             </View>
