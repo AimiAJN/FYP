@@ -3,10 +3,6 @@
 Belum siap:
 - Right slide menu (Profile, Setting, Logout) -> yg ni mcm xleh je nak buat slide menu(mcm belum available lg funtion utk 2     slide menu; kiri and kanan. So optionnya adalah buat dropdown menu mcm web version.
 - Announcement popup
-- Page Class timetable
-- Page CAM
-- Page Final Exam
-- Page Result
 - Push notification (Setting Page)
 - Betulkan flex (utk landscape view)
 - Link
@@ -46,4 +42,9 @@ INSTALL NATIVE BASE
 INSTALL REACT NATIVE AUTO HEIGHT IMAGE
 --------------------------------------
 1. npm install react-native-auto-height-image
+2. react-native link
+
+INSTALL REACT NATIVE MATERIAL DROPDOWN
+--------------------------------------
+1. npm install --save react-native-material-dropdown
 2. react-native link
