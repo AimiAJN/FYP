@@ -6,6 +6,7 @@ Belum siap:
 - Push notification (Setting Page)
 - Betulkan flex (utk landscape view)
 - Link
+- Database
 - Connect to database
 
 Notes:
