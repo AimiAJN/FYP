@@ -26,10 +26,10 @@ class myAcademicScreen extends React.Component {
             </View>
             <View style={{flexDirection: 'column', alignItems: 'center'}}>
                 <Text style={{margin: 5}}></Text>
-                <Text style={styles.list}>Class Timetable</Text>
-                <Text style={styles.list}>Continuous Assessment Marks</Text>
-                <Text style={styles.list}>Final Exam</Text>
-                <Text style={styles.list}>Result</Text>
+                <Text style={styles.list} onPress={() => navigate('classTimetable')}>Class Timetable</Text>
+                <Text style={styles.list} onPress={() => navigate('CAM')}>Continuous Assessment Marks</Text>
+                <Text style={styles.list} onPress={() => navigate('finalExam')}>Final Exam</Text>
+                <Text style={styles.list} onPress={() => navigate('result')}>Result</Text>
                 <Text style={styles.list}>Study Plan</Text>
                 <Text style={styles.list} onPress={()=> Linking.openURL('http://prereg.iium.edu.my/')}>Pre Reg</Text>
                 <Text style={styles.list}>Partial Transcript</Text>
