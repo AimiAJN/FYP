@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {StyleSheet, Text, View, ScrollView} from 'react-native';
 import {Button, Icon} from 'native-base';
 import AutoHeightImage from 'react-native-auto-height-image';
+import Dialog, {DialogTitle, DialogContent} from 'react-native-popup-dialog';
 
 class mainScreen extends React.Component {
   static navigationOptions = {
@@ -11,6 +12,11 @@ class mainScreen extends React.Component {
         // headerRight: ( <Icon name='ios-contact' style={{padding: 10}}/>),
         drawerIcon:(<Icon name='ios-home'/>),
       }
+  
+      state = {
+        visible: false,
+        scaleAnimationDialog: false,
+      };  
  
   render() {
     const {navigate} = this.props.navigation;
@@ -50,7 +56,18 @@ class mainScreen extends React.Component {
             <View style={{flexDirection: 'column', alignItems: 'center'}}>
                 <Text style={styles.announcement}>Announcement</Text>
                 <View style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', width: 340, height: 340, marginBottom: 30, backgroundColor: '#FFFFFF'}}>
-                  <Text style={styles.title}>Example Announcement</Text>
+                  <Text style={styles.title} onPress={() => {this.setState({ visible: true });}}>Example Announcement</Text>
+                  <Dialog
+                    visible={this.state.visible}
+                    dialogTitle={<DialogTitle title="Example Announcement" />}
+                    onTouchOutside={() => {
+                      this.setState({ visible: false });
+                    }}
+                  >
+                    <DialogContent>
+                      <Text>{'\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}</Text>
+                    </DialogContent>
+                  </Dialog>
                 </View>
             </View>
             </ScrollView>
