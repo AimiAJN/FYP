@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet} from 'react-native';
-import {StackNavigator, DrawerNavigator} from 'react-navigation';
+import {createStackNavigator, createDrawerNavigator} from 'react-navigation';
 import loginScreen from './screen/login';
 import mainScreen from './screen/main';
 import myAcademicScreen from './screen/myAcademic';
@@ -23,7 +23,7 @@ export default class App extends Component {
     }
 }
  
-const StackNav = StackNavigator({
+const StackNav = createStackNavigator({
   login: {screen: loginScreen},
   main: {screen: mainScreen},
   myAcademic: {screen: myAcademicScreen},
@@ -40,7 +40,7 @@ const StackNav = StackNavigator({
   result: {screen: resultScreen},
 });
 
-const Router1 = DrawerNavigator({
+const Router1 = createDrawerNavigator({
   login: {screen: StackNav, navigationOptions: {drawerLabel: () => null}},
   main: {screen: mainScreen},
   myAcademic: {screen: myAcademicScreen},
