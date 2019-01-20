@@ -16,7 +16,6 @@ class mainScreen extends React.Component {
   
   state = {
     visible: false,
-    scaleAnimationDialog: false,
   };
 
   _menu = null;
