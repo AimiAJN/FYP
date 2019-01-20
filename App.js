@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import {StyleSheet} from 'react-native';
-import {createStackNavigator, createDrawerNavigator} from 'react-navigation';
+import React, { Component } from 'react';
+import { StyleSheet } from 'react-native';
+import { createStackNavigator, createDrawerNavigator } from 'react-navigation';
 import loginScreen from './screen/login';
 import mainScreen from './screen/main';
 import myAcademicScreen from './screen/myAcademic';
