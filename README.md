@@ -1,11 +1,11 @@
 # FYP
 
 To do list:
-- Push notification (Setting Page)
 - Betulkan flex (utk landscape view)
 - Database
 - Connect to database
 - Validate matric no & password
+- Push notification (Setting Page)
 - Links (My Services Page)
 
 Notes:
