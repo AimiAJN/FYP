@@ -2,7 +2,6 @@
 
 Belum siap:
 - Right slide menu (Profile, Setting, Logout) -> yg ni mcm xleh je nak buat slide menu(mcm belum available lg funtion utk 2     slide menu; kiri and kanan. So optionnya adalah buat dropdown menu mcm web version.
-- Announcement popup
 - Push notification (Setting Page)
 - Betulkan flex (utk landscape view)
 - Link
