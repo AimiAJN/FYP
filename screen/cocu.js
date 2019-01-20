@@ -47,7 +47,7 @@ class cocuScreen extends React.Component {
                 <AutoHeightImage width={150} style={{margin: 13}} source={{uri:'http://imaluum.iium.edu.my/assets/images/full-typeface.png'}}/>
                 <Menu
                   ref={this.setMenuRef}
-                  button={<Icon name='ios-contact' style={{margin: 10}} onPress={this.showMenu}/>}
+                  button={<Icon name='ios-contact' style={{marginRight: 10, fontSize:35}} onPress={this.showMenu}/>}
                 >
                   <MenuItem onPress={this.hideViewProfile}>View Profile</MenuItem>
                   <MenuItem onPress={this.hideSetting}>Setting</MenuItem>
