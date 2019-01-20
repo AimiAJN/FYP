@@ -5,6 +5,7 @@ To do list:
 - Database
 - Connect to database
 - Validate matric no & password
+- Invalid matricno/password alert
 - Push notification (Setting Page)
 - Links (My Services Page)
 
