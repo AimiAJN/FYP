@@ -48,3 +48,8 @@ INSTALL REACT NATIVE MATERIAL DROPDOWN
 --------------------------------------
 1. npm install --save react-native-material-dropdown
 2. react-native link
+
+INSTALL REACT NATIVE POPUP DIALOG
+--------------------------------------
+1. npm install --save react-native-popup-dialog
+2. react-native link
