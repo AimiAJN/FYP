@@ -58,3 +58,11 @@ INSTALL REACT NATIVE MATERIAL MENU
 --------------------------------------
 1. npm install --save react-native-material-menu
 2. react-native link
+
+INSTALL REACT NATIVE TOGGLE SWITCH
+--------------------------------------
+1. npm i toggle-switch-react-native --save
+2. react-native link
+
+SOURCE: https://www.npmjs.com/package/toggle-switch-react-native
+NOTES: ntah kenapa tak ubah option bila tekan.
