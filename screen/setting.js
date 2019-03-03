@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import { Icon } from 'native-base';
 import AutoHeightImage from 'react-native-auto-height-image';
 import Menu, { MenuItem } from 'react-native-material-menu';
+import ToggleSwitch from 'toggle-switch-react-native';
 
 class settingScreen extends React.Component {
   static navigationOptions = {
@@ -37,6 +38,10 @@ class settingScreen extends React.Component {
     this._menu.show();
   };
 
+  state = {
+    isOnDefaultToggleSwitch: false,
+  };
+
   render() {
     const {navigate} = this.props.navigation;
     
@@ -51,11 +56,25 @@ class settingScreen extends React.Component {
                 >
                   <MenuItem onPress={this.hideViewProfile}>View Profile</MenuItem>
                   <MenuItem onPress={this.hideSetting}>Setting</MenuItem>
-                  <MenuItem onPress={this.hideLogout}>Logout</MenuItem>
+                  <MenuItem onPress={this.hideLogout} style={{backgroundColor: '#ff4747'}}>Logout</MenuItem>
                 </Menu>          
             </View>
             <View style={styles.boxTwo}>
                 <Text style={{fontSize: 17, margin: 7}}>Setting</Text>
+            </View>
+            <Text style={{margin: 5}}></Text>
+            <View style={{flexDirection: 'row', alignItem: 'center'}}>
+                <ToggleSwitch
+                  onColor='#82e3ff'
+                  offColor='#ff7c7c'
+                  label='Push Notification'
+                  labelStyle={{color: 'black', fontWeight: '500', marginHorizontal: 70}}
+                  size='medium'
+                  isOn={this.state.isOnDefaultToggleSwitch}
+                  onToggle={isOnDefaultToggleSwitch => {
+                    this.setState({ isOnDefaultToggleSwitch });
+                  }}
+                />
             </View>
         </View> 
     ); 
