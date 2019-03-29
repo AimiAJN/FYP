@@ -51,7 +51,7 @@ class myAcademicScreen extends React.Component {
                 >
                   <MenuItem onPress={this.hideViewProfile}>View Profile</MenuItem>
                   <MenuItem onPress={this.hideSetting}>Setting</MenuItem>
-                  <MenuItem onPress={this.hideLogout}>Logout</MenuItem>
+                  <MenuItem onPress={this.hideLogout} style={{backgroundColor: '#ff4747'}}>Logout</MenuItem>
                 </Menu>
             </View>
             <View style={styles.boxTwo}>
