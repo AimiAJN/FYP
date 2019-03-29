@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet } from 'react-native';
-import { createStackNavigator, createDrawerNavigator } from 'react-navigation';
+import {createStackNavigator, createDrawerNavigator} from 'react-navigation';
 import loginScreen from './screen/login';
 import mainScreen from './screen/main';
 import myAcademicScreen from './screen/myAcademic';
@@ -48,9 +48,6 @@ const Router1 = createDrawerNavigator({
   myServices: {screen: myServicesScreen},
   disciplinary: {screen: disciplinaryScreen},
   cocu: {screen: cocuScreen},
-  viewProfile: {screen: viewProfileScreen},
-  setting: {screen: settingScreen},
-  Logout: {screen: loginScreen},
 });
 
 // const DrawerNav = DrawerNavigator({ 
