@@ -66,3 +66,14 @@ INSTALL REACT NATIVE TOGGLE SWITCH
 
 SOURCE: https://www.npmjs.com/package/toggle-switch-react-native
 NOTES: ntah kenapa tak ubah option bila tekan.
+
+
+
+UPDATE!!! (7 APRIL)
+
+iMaluum_Site : folder tu save dalam htdocs
+
+viewProfile.js : dah update masuk data. 
+
+
+
