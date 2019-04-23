@@ -33,8 +33,7 @@ class loginScreen extends React.Component {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-     
+      body: JSON.stringify({    
         matric_no: UserMatricNo,
         password: UserPassword
       })
@@ -46,16 +45,13 @@ class loginScreen extends React.Component {
             // If server response message same as Data Matched
            if(responseJson === 'Data Matched')
             {
-    
                 //Then open Profile activity and send user email to profile activity.
                 this.props.navigation.navigate('Second', { MatricNo: UserMatricNo });
                 //this.props.navigation.navigate('main');
             }
             else{
-    
               Alert.alert(responseJson);
-            }
-    
+            }  
           }).catch((error) => {
             console.error(error);
           });     
@@ -209,15 +205,13 @@ class mainScreen extends React.Component {
     }
   }
   
-  export default MainProject = StackNavigator(
-    {
-       First: { screen: loginScreen },
-       
+  export default MainProject = StackNavigator({
+       First: { screen: loginScreen },      
        Second: { screen: mainScreen }
-    },{
-        headerMode: 'none'
-        }
-        );
+  },{
+       headerMode: 'none'
+    }
+);
       
   const styles = StyleSheet.create({
     container: {
