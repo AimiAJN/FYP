@@ -15,23 +15,17 @@ class loginScreen extends React.Component {
     };
 
     constructor(props) {
- 
         super(props)
-     
         this.state = {
-     
           UserMatricNo: '',
           UserPassword: ''
-     
         }
-     
       }
      
     UserLoginFunction = () =>{
      
      const { UserMatricNo }  = this.state ;
      const { UserPassword }  = this.state ;
-     
      
     fetch('http://10.111.211.214/iMaluum_Site/User_Login.php', {
       method: 'POST',
@@ -42,9 +36,7 @@ class loginScreen extends React.Component {
       body: JSON.stringify({
      
         matric_no: UserMatricNo,
-     
         password: UserPassword
-     
       })
      
     }).then((response) => response.json())
@@ -66,12 +58,9 @@ class loginScreen extends React.Component {
     
           }).catch((error) => {
             console.error(error);
-          });
-     
-     
+          });     
       }
     
-
     render() {
         const {navigate} = this.props.navigation;
         
@@ -81,7 +70,6 @@ class loginScreen extends React.Component {
                 <Image style={styles.icon} source={{uri:'https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/International_Islamic_University_Malaysia_logo.svg/220px-International_Islamic_University_Malaysia_logo.svg.png'}}/>
                 <Image style={styles.icon} source={{uri:'http://imaluum.iium.edu.my/assets/images/logo-landing-page.png'}} />
             </View>        
-           
            
             <Text style={styles.welcome}>{'Welcome to\niMaluum Mobile Application\n'}</Text>            
             <TextInput
@@ -93,15 +81,10 @@ class loginScreen extends React.Component {
                 style={{height: 40, width: 250,  backgroundColor: 'white', textAlign: 'center'}}
                 onChangeText={UserPassword => this.setState({UserPassword})}
                 placeholder="password"
-                 // Making the Under line Transparent.
-   
-
-    secureTextEntry={true}
+                secureTextEntry={true}
             />
-
-
-
-<View style={{flexDirection: 'row', padding: 5}}>
+                    
+            <View style={{flexDirection: 'row', padding: 5}}>
                 <CheckBox
                     style={{margin: 5}}
                     onClick={()=>{
@@ -113,44 +96,9 @@ class loginScreen extends React.Component {
                     checkBoxColor='white'
                 />
                 <Text style={{marginTop: 9, color: 'white', }}>Remember password</Text>
-            </View>           
-                    
+            </View>                 
             <Button buttonStyle={styles.button} titleStyle={{color: "black"}} onPress={this.UserLoginFunction} title="Login"></Button>
-      
-          
-  
-  {/* <TextInput
-    
-    // Adding hint in Text Input using Place holder.
-    placeholder="Enter User Matric Number"
-
-    onChangeText={UserMatricNo => this.setState({UserMatricNo})}
-
-    // Making the Under line Transparent.
-    underlineColorAndroid='transparent'
-
-    style={styles.TextInputStyleClass}
-  />
-
-  <TextInput
-    
-    // Adding hint in Text Input using Place holder.
-    placeholder="Enter User Password"
-
-    onChangeText={UserPassword => this.setState({UserPassword})}
-
-    // Making the Under line Transparent.
-    underlineColorAndroid='transparent'
-
-    style={styles.TextInputStyleClass}
-
-    secureTextEntry={true}
-  /> */}
- 
-
-
         </View>
-        
         );
     }
 }
@@ -270,9 +218,7 @@ class mainScreen extends React.Component {
         headerMode: 'none'
         }
         );
-     
-    
-  
+      
   const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -344,18 +290,12 @@ class mainScreen extends React.Component {
         padding: 3,
       },
       TextInputStyleClass: {
-     
         textAlign: 'center',
         marginBottom: 7,
         height: 40,
         borderWidth: 1,
-        // Set border Hex Color Code Here.
-         borderColor: '#2196F3',
-         
-         // Set border Radius.
-         borderRadius: 5 ,
+        borderColor: '#2196F3',
+        borderRadius: 5 ,
         
-        }
-        
-        
-        });
+        }       
+    });
